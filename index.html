@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>V-bank Homepage</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="load.css">
+</head>
+
+<body>
+    <header>
+
+        <div class="brand">
+            <h1><span class="mark">V-</span>BANK</h1>
+            <p>...more than banking...</p>
+        </div>
+        <!-- navigation links -->
+        <nav>
+            <ul>
+                <li><a class="current" href="#">Welcome</a></li>
+                <li><a href="dashboard.html">My Wallet</a></li>
+                <li><a href="c-care.html">Customer Care</a></li>
+                <li><a href="signup.html">Register</a></li>
+            </ul>
+        </nav>
+        <!-- menu toggle -->
+        <div class="toggle">&#9776;</div>
+    </header>
+
+    <!-- hero -->
+    <div class="hero">
+        <div class="content">
+            <h1>Your <span class="mark">virtual</span> bank</h1>
+            <p>Extending beyond traditional banking solutions</p>
+            <a href="signup.html">
+                <button class="btn-1">Create Account</button>
+            </a>
+        </div>
+    </div>
+
+    <!-- About section -->
+    <section>
+        <div class="wrapper">
+            <div class="wrap">
+                <h1>About <span class="mark">Us</span></h1>
+                <p>Welcome to Virtual Bank, your trusted partner in modern banking solutions.
+                    At [Virtual Bank Name], we believe in providing a
+                    seamless and secure online banking experience that empowers you to
+                    manage your finances with ease, wherever you are.</p>
+
+                <p>As a leading virtual bank, we pride ourselves on leveraging cutting-edge
+                    technology to bring you a comprehensive suite of banking services.
+                    Whether you're an individual, a small business owner, or a corporate client,
+                    we have tailored solutions to meet your unique financial needs.</p>
+            </div>
+            <div class="wrap">
+                <img src="about.svg">
+            </div>
+        </div>
+    </section>
+
+    <!-- Services section -->
+    <section id="services">
+        <h2>Our <span class="mark">Services</span></h2>
+        <ul>
+            <li>
+                <h3>Online Account Management</h3>
+                <p>Manage your accounts, track transactions, and access statements easily through our intuitive online
+                    platform.</p>
+            </li>
+            <li>
+                <h3>Digital Payments</h3>
+                <p>Transfer funds, make bill payments, and set up recurring payments securely with our seamless digital
+                    payment solutions.</p>
+            </li>
+            <li>
+                <h3>Mobile Banking</h3>
+                <p>Take your banking on the go with our user-friendly mobile banking app, allowing you to manage your
+                    accounts from anywhere.</p>
+            </li>
+            <li>
+                <h3>Savings and Deposits</h3>
+                <p>Grow your savings with our competitive interest rates and flexible savings and deposit account
+                    options.</p>
+            </li>
+            <li>
+                <h3>Loans and Credit</h3>
+                <p>Access various loan and credit products, including personal loans, home loans, and credit cards, with
+                    competitive rates and a streamlined application process.</p>
+            </li>
+            <li>
+                <h3>Investment Opportunities</h3>
+                <p>Explore investment options such as mutual funds, stocks, bonds, and retirement accounts to help you
+                    grow your wealth.</p>
+            </li>
+            <li>
+                <h3>Financial Planning</h3>
+                <p>Receive personalized financial planning services to assist you in budgeting, saving, and planning for
+                    your future financial goals.</p>
+            </li>
+            <li>
+                <h3>Customer Support</h3>
+                <p>Our dedicated support team is available to provide assistance and address any queries or concerns you
+                    may have regarding our services.</p>
+            </li>
+        </ul>
+    </section>
+
+    <!-- contact section -->
+    <section id="contact">
+        <div class="wrapper">
+            <div class="wrap">
+                <img src="contact.svg">
+            </div>
+            <div class="wrap">
+                <h2>Contact <span class="mark">Us</span></h2>
+                <div class="contact-form">
+                    <h3>Send us a message</h3>
+                    <form>
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" required>
+
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+
+                        <button type="submit">Send</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- footer -->
+    <footer>
+        <div class="footer-container">
+            <p>&copy; 2023 Virtual Bank. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- overlay -->
+    <div class="overlay">
+        <div class="menu">
+            <div class="close">&times;</div>
+            <nav>
+                <ul>
+                    <li><a class="current" href="#">Welcome</a></li>
+                    <li><a href="dashboard.html">My Wallet</a></li>
+                    <li><a href="c-care.html">Customer Care</a></li>
+                    <li><a href="signup.html">Register</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+
+    <!-- loader -->
+    <div class="loader">
+        <div class="circle"></div>
+        <div class="brand">
+            <h1><span class="mark">V-</span>BANK</h1>
+            <p>...more than banking...</p>
+        </div>
+    </div>
+
+
+    <script>
+        const toggle = document.querySelector(".toggle");
+        const closebtn = document.querySelector(".close");
+        const overlay = document.querySelector(".overlay");
+        
+
+        toggle.addEventListener("click", () => {
+            overlay.classList.add("active");
+        });
+        closebtn.addEventListener("click", () => {
+            overlay.classList.remove("active");
+        });
+        overlay.addEventListener("click", () => {
+            overlay.classList.remove("active");
+        });
+    </script>
+
+    <script src="load.js"></script>
+</body>
+
+</html>

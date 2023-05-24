@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="style2.css">
+    <link rel="stylesheet" href="load.css">
+</head>
+
+<body>
+    <div class="section-1">
+        <header>
+            <div class="brand">
+                <h1><span class="mark">V-</span>BANK</h1>
+                <p>...more than banking...</p>
+            </div>
+            <div class="close">&times;</div>
+        </header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a class="current" href="dashboard.html">My Wallet</a></li>
+                <li><a href="c-care.html">Customer Care</a></li>
+                <li><a href="login.html">Logout</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div class="section-2">
+        <div class="top">
+            <div class="greet">
+                <p>Hello, <span id="userName">gift jackson</span></p>
+                <h1>Welcome</h1>
+            </div>
+            <div class="toggle">&#9776;</div>
+        </div>
+        <div class="balance">
+            <p>Available Balance</p>
+            <h1>&dollar;4,800,000.00</h1>
+        </div>
+        <div class="boxes">
+            <div class="box">
+                <img src="deposit.png" alt="deposit icon">
+                <h2>Deposit</h2>
+            </div>
+            <div class="box">
+                <img src="transfer.png" alt="transfer icon">
+                <h2>Transfer</h2>
+            </div>
+            <div class="box">
+                <img src="withdraw.png" alt="withdraw icon">
+                <h2>Withdraw</h2>
+            </div>
+        </div>
+
+        <!-- Transaction History -->
+        <div class="wrapper">
+            <div class="title">
+                <h2>Transaction History</h2>
+            </div>
+            <div class="boxx">
+                <ol>
+                    <li> &dollar;500,400 <span>Successfull</span></li>
+                    <li> &dollar;73,300 <span>Successfull</span></li>
+                    <li> &dollar;113,400 <span>Successfull</span></li>
+                    <li> &dollar;288,300 <span>Successfull</span></li>
+                </ol>
+            </div>
+        </div>
+    </div>
+
+    <!-- error modal -->
+    <div class="overlay">
+        <div class="modal">
+            <div class="closebtn">&times;</div>
+            <div class="content">
+                <p>Your account is locked due to a large deposit. Contact customer service for help.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- loader -->
+    <div class="loader">
+        <div class="circle"></div>
+        <div class="brand">
+            <h1><span class="mark">V-</span>BANK</h1>
+            <p>...more than banking...</p>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+    <script src="load.js"></script>
+    <script>
+        const box = document.querySelectorAll(".box");
+        const close = document.querySelector(".closebtn");
+        const overlay = document.querySelector(".overlay");
+
+        close.addEventListener("click", () => {
+            overlay.style.display = "none";
+        });
+        overlay.addEventListener("click", (e) => {
+            overlay.style.display = "none";
+
+            if (e.target !== overlay && e.target !== close) {
+                overlay.style.display = "grid";
+            }
+        });
+
+        box.forEach((e) => {
+            e.addEventListener("click", () => {
+                overlay.style.display = "grid";
+            })
+        });
+
+    </script>
+</body>
+
+</html>

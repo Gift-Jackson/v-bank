@@ -1,0 +1,357 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    outline: none;
+    text-decoration: none;
+    color: #333;
+    font-family: 'Quicksand', sans-serif;
+}
+body{
+    background-color: #fefefe;
+}
+header{
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 30px;
+    border-bottom: #eee solid 1px;
+    /* position: fixed; */
+    top: 0;
+    /* left: 0; */
+    /* width: 100%; */
+}
+.brand h1{
+    font-size: 30px;
+}
+.brand p{
+    font-size: 18px;
+}
+.mark{
+    color: #45a049;
+}
+
+/* nav links */
+nav ul{
+    display: flex;
+    list-style: none;
+}
+nav ul li a{
+    display: block;
+    margin-left: 45px;
+    font-size: 20px;
+}
+nav ul li a:hover, .current{
+    color: #45a049;
+    font-weight: 600;
+}
+
+/* menu toggle */
+.toggle{
+    font-size: 35px;
+    transform: scalex(1.2);
+    display: none;
+    cursor: pointer;
+    color: #333;
+}
+.toggle:active{
+    color: #45a049;
+}
+
+/* hero */
+.hero{
+    background-image: linear-gradient(rgba(0,0,0,.7), rgba(0,0,0,.7)), url(bg.jpeg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.content{
+    text-align: center;
+    padding: 0 20px;
+}
+.hero h1{
+    color: #fefefe;
+    font-size: 60px;
+    text-transform: uppercase;
+}
+.hero p{
+    color: #fefefe;
+    font-size: 20px;
+    text-transform: capitalize;
+}
+.btn-1{
+    margin-top: 40px;
+    height: 60px;
+    width: 250px;
+    background: transparent;
+    color: #fefefe;
+    border: 1px solid #fefefe;
+    font-size: 20px;
+}
+.btn-1:hover{
+    background-color: #45a049;
+    color: #fefefe;
+    border: unset;
+}
+
+/* About */
+section{
+    width: 80%;
+    margin: auto;
+    margin-top: 30px;
+}
+.wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+}
+.wrap{
+    width: 50%;
+}
+.wrap h1{
+    font-size: 40px;
+    margin-bottom: 30px;
+    /* position: relative; */
+}
+/* .wrap h1::before{
+    content: "";
+    position: absolute;
+    height: 5px;
+    width: 50px;
+    left: 0;
+    bottom: -10px;
+    background-color: #45a049;
+    border-radius: 50px;
+} */
+.wrap img{
+    height: 90%;
+    width: 100%;
+    display: flex;
+    align-self: center;
+}
+.wrap p{
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+/* services section */
+#services {
+    /* padding: 50px; */
+    background-color: #f7f7f7;
+  }
+  
+  #services h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 40px;
+    color: #333;
+  }
+  
+  #services ul {
+    list-style-type: none;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+  }
+  
+  #services li {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  #services li h3 {
+    font-size: 20px;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  #services li p {
+    font-size: 16px;
+    color: #666;
+  }
+
+  /* contact section */
+  #contact {
+    /* padding: 50px; */
+    background-color: #f7f7f7;
+  }
+  
+  #contact h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 40px;
+    color: #333;
+  }
+
+  .contact-form {
+    text-align: center;
+  }
+  
+  .contact-form h3 {
+    font-size: 20px;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .contact-form form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .contact-form label {
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 5px;
+  }
+  
+  .contact-form input,
+  .contact-form textarea {
+    width: 300px;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .contact-form textarea {
+    resize: vertical;
+    min-height: 100px;
+  }
+  
+  .contact-form button {
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .contact-form button:hover {
+    background-color: #555;
+  }
+
+  /* footer */
+  footer {
+    background-color: #45a049;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .footer-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .footer-links ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+  
+  .footer-links ul li {
+    margin-right: 15px;
+  }
+  
+  .footer-links ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 14px;
+  }
+  
+  .footer-container p {
+    font-size: 14px;
+    margin: 0;
+    color: #f7f7f7;
+  }
+
+  /* overlay */
+  .overlay{
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: none;
+    justify-content: flex-end;
+  }
+  .overlay.active{
+    display: flex;
+  }
+  .menu{
+    height: 100%;
+    width: 70%;
+    background-color: #fefefe;
+    padding: 10px;
+    transform: translatex(100%);
+    animation: menu .2s ease 1 forwards;
+  }
+  @keyframes menu{
+    100%{
+        transform: translateX(0);
+    }
+  }
+  .close{
+    font-size: 40px;
+    height: 50px;
+    width: 50px;
+    display: grid;
+    place-items: center;
+    background-color: #eee;
+    cursor: pointer;
+  }
+  .menu nav ul{
+    display: block;
+  }
+  .menu nav ul li a{
+    display: block;
+    width: 100%;
+    line-height: 50px;
+    padding: 10px 15px;
+  }
+  .menu nav ul li a:hover{
+    background-color: #eee;
+  }
+
+  
+  
+  
+
+/* responsiveness */
+@media (max-width:786px){
+    header{
+        height: 70px;
+    }
+    header nav{
+        display: none;
+    }
+    .toggle{
+        display: block;
+    }
+    .wrapper{
+        flex-direction: column;
+    }
+    section{
+        width: 90%;
+        margin-bottom: 20px;
+    }
+    .wrap{
+        width: 100%;
+    }
+}

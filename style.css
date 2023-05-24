@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+
+
+
+*{
+    margin:0;
+    padding: 0;
+    outline: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: 'Quicksand', sans-serif;
+}
+body{
+    background-color: #fefefe;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.container{
+    height: auto;
+    width: 500px;
+    /* border: 1px solid #000; */
+    margin-bottom: 50px;
+    position: relative;
+    /* overflow: hidden; */
+}
+header{
+    height: 100px;
+    margin-top: 20px;
+}
+header h1{
+    color: #333;
+    font-size: 40px;
+}
+.mark{
+    color: #45a049;
+}
+
+h2 {
+    text-align: center;
+  }
+  
+  .form-group {
+    margin-bottom: 15px;
+  }
+  
+  label {
+    display: block;
+    font-weight: bold;
+  }
+  
+  input[type="text"],
+  input[type="email"],
+  input[type="password"],
+  select {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin-top: 10PX;
+    background: transparent;
+  }
+  
+  input[type="submit"] {
+    background-color: #4CAF50;
+    border: 1px solid #45a049;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  input[type="submit"]:hover {
+    background-color: #45a049;
+  }
+  
+  form {
+    max-width: 100%;
+    margin: 0 auto;
+    background-color: #fefefe;
+    padding: 30px;
+    border-radius: 10px;
+    /* box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1); */
+  }
+  .title{
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  .title h1{
+    color: #333;
+  }
+  label, input{
+    font-size: 19px;
+  }
+  .login-btn, .sign-up-btn{
+    border: 1px solid #45a049;
+    color: #45a049;
+    background-color: transparent;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 19px;
+  }
+  .form-group-btn{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+  }
+  /* .sign-up-form, .login-form{
+    position: absolute;
+    width: 100%;
+    top: 0;
+  } */
+
+  /* responsiveness */
+  @media (max-width:785px) {
+    .container{
+        width: 90%;
+    }
+  }

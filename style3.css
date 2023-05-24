@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+
+
+
+*{
+    margin:0;
+    padding: 0;
+    outline: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: 'Quicksand', sans-serif;
+}
+body{
+    display: flex;
+    height: 100vh;
+}
+.section-1{
+    /* background-color: red; */
+    flex: 1;
+    padding: 0 20px;
+    border-right: 1px solid #eee;
+}
+.section-2{
+    background-color: #fefefe;
+    flex: 3;
+    padding: 0 20px;
+}
+header{
+    height: 100px;
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #eee;
+}
+header h1{
+    color: #333;
+    font-size: 40px;
+}
+.mark{
+    color: #45a049;
+}
+.close{
+    height: 60px;
+    width: 60px;
+    background-color: #eee;
+    display: grid;
+    place-items: center;
+    font-size: 40px;
+    cursor: pointer;
+    transition: .3s;
+}
+.close:hover{
+    transform: rotate(10deg);
+}
+/* Nav menu */
+nav{
+    margin-top: 20px;
+}
+nav ul{
+    display: block;
+    list-style: none;
+}
+nav ul li a{
+    color: #333;
+    line-height: 60px;
+    font-size: 20px;
+    padding: 10px;
+    /* margin-bottom: 20px; */
+    width: 100%;
+    display: block;
+    transition: .3s;
+}
+nav ul li a:hover, .current{
+    background-color: #eee;
+    letter-spacing: 1px;
+}
+
+.top{
+    height: 120px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* flex-direction: column; */
+    padding: 20px;
+    background: #45a049;
+    border-radius: 0 0 20px 20px;
+}
+.toggle{
+    color: #fefefe;
+    font-size: 40px;
+    transform: scaleX(1.2);
+    cursor: pointer;
+    display: none;
+}
+.greet h1{
+    color: #fefefe;
+    font-size: 40px;
+}
+
+section {
+    margin: 20px;
+    text-align: center;
+  }
+  
+  h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  .contact{
+    margin-top: 40px;
+    height: 50px;
+    width: 200px;
+    border: 1px solid #45a049;
+    border-radius: 50px;
+    font-size: 19px;
+    background-color: transparent;
+  }
+  .contact:hover{
+    background-color: #45a049;
+    color: #fefefe;
+  }
+  .contact:active{
+    transform: scale(0.9);
+  }
+  section h2{
+    font-size: 30px;
+    color: #333;
+  }
+  section p{
+    font-size: 20px;
+    color: #333;
+  }
+
+  /* Responsiveness */
+@media (max-width:900px) {
+    .section-1{
+        /* display: none; */
+        position: fixed;
+        background-color: #fefefe;
+        width: 70%;
+        height: 100%;
+        transition: .3s;
+        left: -70%;
+    }
+    .section-1.active{
+        left: 0;
+    }
+    .section-2{
+        padding: 0 10px;
+    }
+    .modal{
+        width: 90%;
+        margin: auto;
+    }
+    .toggle{
+        display: block;
+    }
+}
